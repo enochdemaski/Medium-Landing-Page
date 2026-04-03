@@ -5,7 +5,7 @@
 }
 
 main{
-    background-color: #d2d2d2;
+    /* background-color: #d2d2d2; */
 }
 
 .flex-container{
@@ -71,7 +71,8 @@ main{
 
 .headtext{
     font-size: 70px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+   font-family: "Times New Roman", Times, serif;
     width: 60%;
 }
 
@@ -93,7 +94,7 @@ main{
     font-size: 15px;
 }
 
-img{
+#flower-box{
     display: none;
 }
 
@@ -156,6 +157,10 @@ img{
     .startbtn{
         margin-top: 3em;
     }
+
+    .footer-link{
+    margin-top: 22%;
+}
 }
 
 @media (min-width: 768px){
@@ -179,28 +184,79 @@ img{
         border: 1px solid #000;
     }
 
-    .hero-section{
-        width: 50em;
-    }
 
-    .headtext{
-        font-size: 6em;
-    }
-
-    img{
-    display: content;
-}
-
-    .container{
+   .container{
         display: flex;
+        gap: 2px;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
     }
 
+    section.container{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .hero-section{
+        /* border: 1px solid blue; */
+        width: 100%;
+        max-width: 100%;
+        padding: 30px; 
+        margin: 69px 0px;
+    }
+    .headtext{
+        font-size: 90px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 500;
+        padding: 10px;
+        width: 130%;
+    }
+
+
+    #flower-box{
+    display: contents;
+    margin-right: -250px;
+    margin-left: auto;
 }
 
+
+ #flower-box img{
+ width: 330px;
+ transform: translateX(200px);
+ }
+
+ .subtext{
+    font-size: 23px;
+    margin-top: 2em;
+}
+
+
+}
 
 @media (min-width: 1024px){
         body{
         /* background-color: yellow; */
+    }
+
+      .hero-section{
+        /* border: 1px solid blue; */
+        width: 90%;
+        max-width: 100%;
+        padding: 60px; 
+        margin: 69px 0px;
+    }
+    .headtext{
+        font-size: 90px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 500;
+        padding: 10px;
+        width:70%;
+        /* background-color: blue; */
+    }
+
+    .headtext,.subtext,.startbtn{
+        margin-left: 60px;
     }
  
 }
